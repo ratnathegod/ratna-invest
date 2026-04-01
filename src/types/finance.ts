@@ -8,6 +8,13 @@ export type TaxEngineInput = {
   filingStatus: FilingStatus;
 };
 
+export type PlannerFormValues = {
+  salary: string;
+  state: SupportedState;
+  filingStatus: FilingStatus;
+  monthlyExpenses: string;
+};
+
 export type TaxBreakdown = {
   grossIncome: number;
   taxableIncome: number;

@@ -1,4 +1,4 @@
-import type { PlannerFormValues } from "@/engine/mockPlanner";
+import type { PlannerFormValues } from "@/types/finance";
 
 type InputFormProps = {
   values: PlannerFormValues;
