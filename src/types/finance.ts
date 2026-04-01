@@ -2,6 +2,8 @@ export type FilingStatus = "single" | "married";
 
 export type SupportedState = "CA" | "TX" | "NY";
 
+export type RiskProfile = "conservative" | "moderate" | "aggressive";
+
 export type TaxEngineInput = {
   salary: number;
   state: SupportedState;
@@ -13,6 +15,10 @@ export type PlannerFormValues = {
   state: SupportedState;
   filingStatus: FilingStatus;
   monthlyExpenses: string;
+  employee401kContributionPercent: string;
+  employerMatchPercent: string;
+  employerMatchCapPercent: string;
+  riskProfile: RiskProfile;
 };
 
 export type TaxBreakdown = {
